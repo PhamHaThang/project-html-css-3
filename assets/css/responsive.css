@@ -6,6 +6,9 @@
 }
 /* Tablet and mobile */
 @media (max-width: 991.98px) {
+  .header {
+    min-height: auto;
+  }
   .navbar {
     display: none;
   }
@@ -73,7 +76,6 @@
   .navbar__link {
     font-size: 2rem;
     display: block;
-    text-align: start;
   }
   .navbar__link:hover {
     background-color: #07376377;
@@ -158,10 +160,10 @@
     row-gap: 30px;
   }
   .blog__list {
-    order: 1;
+    order: 2;
   }
   .blog__content {
-    order: 2;
+    order: 1;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -169,9 +171,6 @@
   }
   .blog__heading {
     max-width: 90%;
-  }
-  /* footer */
-  .footer__top {
   }
 }
 /* Tablet */
@@ -183,7 +182,96 @@
   .footer__top {
     grid-template-columns: 0.5fr 0.5fr 1fr;
   }
+  .show-on-mobile {
+    display: none;
+  }
 }
 /* mobile */
 @media (max-width: 767.98px) {
+  .header__action {
+    display: none;
+  }
+  .separate {
+    border-top: 1.5px solid #aab3ba7d;
+    margin-top: 10px;
+  }
+  .menu-header__icon {
+    top: 16px;
+  }
+  .menu-drawer {
+    padding: 40px;
+    inset: 0 20% 0 0;
+  }
+  .hero__img-small {
+    display: none;
+  }
+  .hero__img-large {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .hero__heading {
+    font-size: 3rem;
+  }
+  .hero__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  /* service */
+  .service {
+    padding: 70px 0;
+  }
+  .service__desc {
+    width: 93%;
+  }
+  .service__img {
+    height: auto;
+  }
+  .work__desc {
+    width: 100%;
+  }
+  .work-item {
+    padding: 20px;
+  }
+  /* about */
+  .about {
+    margin-top: 20px;
+    padding: 40px 0;
+  }
+  .section-heading {
+    font-size: 3rem;
+  }
+  /* team */
+  .team__list {
+    grid-template-columns: 1fr;
+  }
+  /* install */
+  .install__inner {
+    margin: 40px 0;
+    padding: 0 8px;
+  }
+  .install__content {
+    min-width: 255px;
+  }
+  /* blog */
+  .blog__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .blog__heading {
+    text-align: center;
+  }
+  /* appointment */
+  .appointment__inner {
+    padding: 30px 5px;
+  }
+
+  /* footer */
+  .footer__top {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .footer__copyright {
+    margin-top: 20px;
+  }
 }
